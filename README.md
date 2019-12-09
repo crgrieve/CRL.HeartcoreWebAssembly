@@ -14,15 +14,15 @@ I have set up 2 doc types:
 
 ## Project Setup
 
-This project is based on the Blazor project that is provided when you "file-> new" Blazor project. Remember to select the Web Assembly option. More info [here](https://docs.microsoft.com/en-gb/aspnet/core/blazor/get-started?view=aspnetcore-3.1&tabs=visual-studio).
+This project is based on the Blazor project that is provided when you "file-> new" Blazor project. Remember to select the Web Assembly option. More info on this example and more about Blazor [here](https://docs.microsoft.com/en-gb/aspnet/core/blazor/get-started?view=aspnetcore-3.1&tabs=visual-studio).
 
-Note, as WebAssemly is in preview at time of publishing, you may need Visual Studio 2019 preview version to see this option
+Note, as WebAssemly is in preview at time of publishing, you may need Visual Studio 2019 preview version to see this option.
 
-Install the nuget package: Umbraco.Headless.Client.Net
+Next, we need to install the nuget package: Umbraco.Headless.Client.Net
 
 ## The code
 
-Update the Index.razor use the Heartcore services and get the content. My example gets the nodes of type "AdventCalendarDate" and shows the message for each day.
+Update the Index.razor use the Heartcore services and get the content. My example gets the nodes of type "AdventCalendarDate" and shows the Node name and message field for each day.
 
 ```
 @page "/"
