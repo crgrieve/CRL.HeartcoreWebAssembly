@@ -57,4 +57,6 @@ Update the Index.razor use the Heartcore services and get the content. My exampl
 
 ## Test the application
 
+You can test the application by debugging in Visual Studio or hosting yourself. Checkout hosting in Blazor [here](https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)
+
 ![](images/blazorContent.png)
