@@ -47,7 +47,7 @@ Update the Index.razor use the Heartcore services and get the content. My exampl
     {
 
 
-        var projectAlias = "caroles-inventive-kangaroo";
+        var projectAlias = "your-project-alias";
         var service = new ContentDeliveryService(projectAlias);
         var rootContentItems = await service.Content.GetByType("AdventCalendarDate");
         content = rootContentItems.Content.Items.ToList();
