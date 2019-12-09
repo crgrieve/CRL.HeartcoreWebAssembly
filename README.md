@@ -10,7 +10,7 @@ I have set up 2 doc types:
 ** Day -  Numeric field representing the day in December
 ** Message - The message spoken by Alexa when this door is opened.
 
-![](images/umbracoContent.PNG)
+![](images/umbracoContent.png)
 
 ## Project Setup
 
@@ -57,4 +57,4 @@ Update the Index.razor use the Heartcore services and get the content. My exampl
 
 ## Test the application
 
-![](images/blazorContent.PNG)
+![](images/blazorContent.png)
