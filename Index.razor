@@ -1,0 +1,28 @@
+@page "/"
+
+@using Umbraco.Headless.Client.Net.Delivery;
+
+@if (content.Count > 0)
+{
+    foreach (var contentItem in content)
+    {
+        <p>@contentItem.Name</p>
+
+        <p>@contentItem.Properties.Where(x=>x.Key=="message").FirstOrDefault().Value</p>
+    }
+}
+
+
+
+@code {
+    List<Umbraco.Headless.Client.Net.Delivery.Models.Content> content = new List<Umbraco.Headless.Client.Net.Delivery.Models.Content>();
+    protected override async Task OnInitializedAsync()
+    {
+
+
+        var projectAlias = "your-project-alias";
+        var service = new ContentDeliveryService(projectAlias);
+        var rootContentItems = await service.Content.GetByType("AdventCalendarDate");
+        content = rootContentItems.Content.Items.ToList();
+    }
+}
